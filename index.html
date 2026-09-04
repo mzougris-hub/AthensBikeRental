@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Athens Bike Rental</title>
+
+<style>
+
+* {
+box-sizing: border-box;
+}
+
+html, body {
+margin: 0;
+padding: 0;
+min-height: 100%;
+}
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+background: #1B1B1B;
+color: #ffffff;
+overflow-x: hidden;
+}
+
+.container {
+width: 100%;
+max-width: 480px;
+margin: 0 auto;
+padding: 25px 20px 35px;
+text-align: center;
+}
+
+/* =========================
+LOGO
+========================= */
+
+.logo-wrapper {
+width: 100%;
+height: 300px;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+margin-bottom: 15px;
+}
+
+.logo {
+width: 300px;
+height: 300px;
+
+max-width: 90vw;
+
+object-fit: contain;
+
+display: block;
+}
+
+/* =========================
+STORE NAME
+========================= */
+
+.store-name {
+font-size: 22px;
+font-weight: 500;
+letter-spacing: 2px;
+color: #ffffff;
+margin-bottom: 7px;
+text-transform: uppercase;
+}
+
+/* =========================
+ADDRESS
+========================= */
+
+.address {
+font-size: 14px;
+color: #bdbdbd;
+margin-bottom: 23px;
+}
+
+/* =========================
+DIVIDER
+========================= */
+
+.divider {
+width: 55px;
+height: 1px;
+
+background: #ffffff;
+
+margin: 0 auto 24px;
+
+opacity: 0.45;
+}
+
+/* =========================
+BUTTONS
+========================= */
+
+.buttons {
+display: flex;
+flex-direction: column;
+gap: 12px;
+}
+
+.btn {
+width: 100%;
+
+min-height: 59px;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+gap: 12px;
+
+padding: 15px 20px;
+
+color: #DF7C90;
+
+text-decoration: none;
+
+font-size: 15px;
+font-weight: 600;
+
+background: transparent;
+
+border: 1px solid #ffffff;
+
+border-radius: 12px;
+
+transition: 0.2s ease;
+}
+
+.btn:hover {
+background: rgba(223,124,144,0.08);
+transform: translateY(-2px);
+}
+
+.btn:active {
+transform: scale(0.98);
+}
+
+/* =========================
+ICONS
+========================= */
+
+.icon {
+width: 23px;
+height: 23px;
+
+flex-shrink: 0;
+}
+
+/* =========================
+FOOTER
+========================= */
+
+.footer-line {
+display: flex;
+align-items: center;
+justify-content: center;
+
+margin-top: 30px;
+}
+
+.footer-line::before,
+.footer-line::after {
+content: "";
+
+width: 55px;
+height: 1px;
+
+background: #ffffff;
+
+opacity: 0.25;
+}
+
+.footer-symbol {
+margin: 0 12px;
+
+font-size: 14px;
+
+color: #DF7C90;
+}
+
+.footer {
+margin-top: 15px;
+
+font-size: 11px;
+
+color: #777777;
+
+letter-spacing: 1.5px;
+}
+
+/* =========================
+MOBILE
+========================= */
+
+@media (max-width: 380px) {
+
+.container {
+padding-left: 15px;
+padding-right: 15px;
+}
+
+.logo-wrapper {
+height: 275px;
+}
+
+.logo {
+width: 275px;
+height: 275px;
+}
+
+.store-name {
+font-size: 20px;
+}
+
+.btn {
+min-height: 55px;
+font-size: 14px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- =====================
+LOGO
+====================== -->
+
+<div class="logo-wrapper">
+
+<img
+src="athens-bike-rental-logo.png.PNG"
+class="logo"
+alt="Athens Bike Rental"
+>
+
+</div>
+
+
+<!-- =====================
+NAME
+====================== -->
+
+<div class="store-name">
+Athens Bike Rental
+</div>
+
+
+<!-- =====================
+ADDRESS
+====================== -->
+
+<div class="address">
+Vasileos Alexandrou 72, Peristeri
+</div>
+
+
+<div class="divider"></div>
+
+
+<!-- =====================
+BUTTONS
+====================== -->
+
+<div class="buttons">
+
+
+<!-- GOOGLE REVIEW -->
+
+<a
+class="btn"
+href="https://search.google.com/local/writereview?placeid=ChIJfxRJW82joRQR-ALKXX-qkGA"
+target="_blank"
+rel="noopener noreferrer"
+>
+
+<svg
+class="icon"
+viewBox="0 0 24 24"
+fill="none"
+>
+
+<path
+d="M12 3.5l2.63 5.32 5.87.85-4.25 4.14 1 5.85L12 16.9l-5.25 2.76 1-5.85L3.5 9.67l5.87-.85L12 3.5z"
+stroke="#DF7C90"
+stroke-width="1.8"
+stroke-linejoin="round"
+/>
+
+</svg>
+
+Leave us a review
+
+</a>
+
+
+<!-- INSTAGRAM -->
+
+<a
+class="btn"
+href="https://www.instagram.com/athens.bike.rental"
+target="_blank"
+rel="noopener noreferrer"
+>
+
+<svg
+class="icon"
+viewBox="0 0 24 24"
+fill="none"
+>
+
+<rect
+x="3.5"
+y="3.5"
+width="17"
+height="17"
+rx="5"
+stroke="#DF7C90"
+stroke-width="1.8"
+/>
+
+<circle
+cx="12"
+cy="12"
+r="4"
+stroke="#DF7C90"
+stroke-width="1.8"
+/>
+
+<circle
+cx="17.4"
+cy="6.7"
+r="1"
+fill="#DF7C90"
+/>
+
+</svg>
+
+Find us on Instagram
+
+</a>
+
+
+<!-- WEBSITE -->
+
+<a
+class="btn"
+href="https://www.athensbikerental.gr/"
+target="_blank"
+rel="noopener noreferrer"
+>
+
+<svg
+class="icon"
+viewBox="0 0 24 24"
+fill="none"
+>
+
+<circle
+cx="12"
+cy="12"
+r="8.5"
+stroke="#DF7C90"
+stroke-width="1.7"
+/>
+
+<path
+d="M3.5 12h17M12 3.5c2.2 2.3 3.4 5.2 3.4 8.5s-1.2 6.2-3.4 8.5c-2.2-2.3-3.4-5.2-3.4-8.5S9.8 5.8 12 3.5z"
+stroke="#DF7C90"
+stroke-width="1.5"
+/>
+
+</svg>
+
+Book Your Bike
+
+</a>
+
+
+<!-- LOCATION -->
+
+<a
+class="btn"
+href="https://www.google.com/maps/search/?api=1&query=Top%20Cycles%2C%20%CE%92%CE%B1%CF%83%CE%B9%CE%BB%CE%AD%CF%89%CF%82%20%CE%91%CE%BB%CE%B5%CE%BE%CE%AC%CE%BD%CE%B4%CF%81%CE%BF%CF%85%2072%2C%20%CE%A0%CE%B5%CF%81%CE%B9%CF%83%CF%84%CE%AD%CF%81%CE%B9&query_place_id=ChIJ5_RmCjejoRQR8dKdLIQAJlo"
+target="_blank"
+rel="noopener noreferrer"
+>
+
+<svg
+class="icon"
+viewBox="0 0 24 24"
+fill="none"
+>
+
+<path
+d="M12 21s7-6.2 7-12a7 7 0 10-14 0c0 5.8 7 12 7 12z"
+stroke="#DF7C90"
+stroke-width="1.8"
+/>
+
+<circle
+cx="12"
+cy="9"
+r="2.5"
+stroke="#DF7C90"
+stroke-width="1.8"
+/>
+
+</svg>
+
+Find us on the map
+
+</a>
+
+
+<!-- PHONE -->
+
+<a
+class="btn"
+href="tel:2105758915"
+>
+
+<svg
+class="icon"
+viewBox="0 0 24 24"
+fill="none"
+>
+
+<path
+d="M6.5 3.8l3 3.1-2 2.5c1.2 2.5 2.6 3.9 5.1 5.1l2.5-2 3.1 3c.7.7.7 1.8 0 2.4l-1.3 1.3c-.8.8-2 1.1-3.1.7-5.4-1.9-9.8-6.3-11.7-11.7-.4-1.1-.1-2.3.7-3.1l1.3-1.3c.6-.7 1.7-.7 2.4 0z"
+stroke="#DF7C90"
+stroke-width="1.7"
+stroke-linejoin="round"
+/>
+
+</svg>
+
+Call us: +30 210 575 8915
+
+</a>
+
+</div>
+
+
+<!-- =====================
+FOOTER
+====================== -->
+
+<div class="footer-line">
+
+<div class="footer-symbol">
+✦
+</div>
+
+</div>
+
+
+<div class="footer">
+© ATHENS BIKE RENTAL
+</div>
+
+</div>
+
+</body>
+</html>
